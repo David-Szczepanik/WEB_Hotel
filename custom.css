@@ -9293,7 +9293,7 @@ textarea.form-control-lg {
     display: none !important; } }
 
 #home {
-  background: url("/images/home.png") no-repeat center center fixed;
+  background: url("images/home.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
