@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="custom.css">
+  <title>Szczepanik - The Grand Hotel</title>
+  <script src="https://kit.fontawesome.com/6d3cb9a4a1.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+<!--HOME-->
+<section id="home" class=" form container-fluid d-flex justify-content-center align-items-center">
+  <div class="container text-white d-flex justify-content-center align-items-center">
+      <form class="row">
+        <h1 class="display-1 text-uppercase font-1">The Grand Hotel</h1>
+        <div class="form container">
+      <h3>Quick Booking</h3>
+
+        <div class="col-12">
+          <label for="inputName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="inputName" required>
+        </div>
+        <div class="col-12">
+          <label for="inputSurname" class="form-label">Surname</label>
+          <input type="text" class="form-control" id="inputSurname" required>
+        </div>
+        <div class="col-12">
+          <label for="inputEmail" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail" required>
+        </div>
+        <div class="col-12">
+          <label for="inputPhone" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="inputPhone" required>
+        </div>
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="mb-3">
+                  <label for="inputGuests" class="form-label">Number of Guests</label>
+                  <input type="number" class="form-control" id="inputGuests" required>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="mb-3">
+                  <label for="inputArrival" class="form-label">Date of Arrival</label>
+                  <input type="date" class="form-control" id="inputArrival" required>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="mb-3">
+                  <label for="inputDeparture" class="form-label">Date of Departure</label>
+                  <input type="date" class="form-control" id="inputDeparture" required>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-danger btn-sm  mx-2">Book Now</button>
+                <button type="button"
+                        data-src="https://www.youtube.com/embed/1Fg5iWmQjwk?si=IrzsdsQrpN-TjKXj"
+                        class="btn btn-secondary btn-sm  mx-2"
+                        data-bs-toggle="modal" data-bs-target="#myModal">Virtual Tour</button>
+              </div>
+            </div>
+        </div>
+      </form>
+  </div>
+</section>
+
+<!--MODAL-->
+<div
+  class="modal fade"
+  id="myModal"
+  tabindex="-1"
+  style="display: none"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button
+          type="button"
+          class="btn-close bg-danger stop-video"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <div class="ratio ratio-16x9">
+          <iframe width="560" height="315"
+                  src="https://www.youtube.com/embed/1Fg5iWmQjwk?si=mKWI-xBnN7tPH5VK"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--NAVBAR-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand font-1" href="#">The Grand Hotel</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#history">History</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pricing">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--HISTORY-->
+<section id="history" class="container">
+  <h2 class="font-1">History</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <p class="font-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci beatae commodi cum distinctio dolore earum fugit ipsam iste, itaque iure laudantium magnam minima neque nihil nisi, officiis perspiciatis, porro praesentium provident quae recusandae suscipit ut. Fugit, nihil tenetur. Commodi consectetur culpa dolor est eveniet mollitia necessitatibus nostrum ratione vel? Perferendis?</p>
+    </div>
+    <div class="col-md-4">
+      <p class="font-handwriting">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus adipisci aspernatur atque commodi consequuntur cupiditate debitis, dignissimos dolore eligendi enim error eveniet hic in inventore, modi molestias neque nobis nostrum nulla officiis optio pariatur perferendis placeat quisquam repellat repudiandae saepe sit tempora tenetur unde ut vel vitae. Aliquid, nesciunt.</p>
+    </div>
+    <div class="col-md-4 d-none d-md-block">
+      <img src="/images/history.png" alt="Image" class="img-fluid">
+    </div>
+  </div>
+</section>
+
+
+<!-- Pricing -->
+<section id="pricing" class="container-fluid">
+  <h2 class="font-1">Pricing</h2>
+  <div class="row">
+    <!-- Card 1 -->
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <div class="card">
+        <img src="/images/rooms/room1.png" class="card-img-top" alt="Room 1">
+        <div class="card-body">
+          <h5 class="card-title">Room 1</h5>
+          <table class="table">
+            <thead>
+            <tr>
+              <th scope="col">Pers.</th>
+              <th scope="col">Night</th>
+              <th scope="col">Week</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>1</td>
+              <td>20eur</td>
+              <td>540eur</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>40eur</td>
+              <td>600eur</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>60eur</td>
+              <td>800eur</td>
+            </tr>
+            </tbody>
+          </table>
+          <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Buy Now">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <div class="card">
+        <img src="/images/rooms/room2.png" class="card-img-top" alt="Room 2">
+        <div class="card-body">
+          <h5 class="card-title">Room 2</h5>
+          <table class="table">
+            <thead>
+            <tr>
+              <th scope="col">Pers.</th>
+              <th scope="col">Night</th>
+              <th scope="col">Week</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>1</td>
+              <td>20eur</td>
+              <td>540eur</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>40eur</td>
+              <td>600eur</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>60eur</td>
+              <td>800eur</td>
+            </tr>
+            </tbody>
+          </table>
+          <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-trigger="hover" title="Buy Now">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <div class="card">
+        <img src="/images/rooms/room3.png" class="card-img-top" alt="Room 3">
+        <div class="card-body">
+          <h5 class="card-title">Room 3</h5>
+          <table class="table">
+            <thead>
+            <tr>
+              <th scope="col">Pers.</th>
+              <th scope="col">Night</th>
+              <th scope="col">Week</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>1</td>
+              <td>20eur</td>
+              <td>540eur</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>40eur</td>
+              <td>600eur</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>60eur</td>
+              <td>800eur</td>
+            </tr>
+            </tbody>
+          </table>
+          <a href="#" class="btn btn-primary" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Buy Now">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <div class="card">
+        <img src="/images/rooms/room4.png" class="card-img-top" alt="Room 4">
+        <div class="card-body">
+          <h5 class="card-title">Room 4</h5>
+          <table class="table">
+            <thead>
+            <tr>
+              <th scope="col">Pers.</th>
+              <th scope="col">Night</th>
+              <th scope="col">Week</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>1</td>
+              <td>20eur</td>
+              <td>540eur</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>40eur</td>
+              <td>600eur</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>60eur</td>
+              <td>800eur</td>
+            </tr>
+            </tbody>
+          </table>
+          <a href="#" class="btn btn-primary" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Buy Now">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="container-fluid">
+  <h2 class="font-1">Gallery</h2>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/images/carousel1.png" class="d-block w-100" alt="carousel1">
+        <div class="carousel-caption d-none d-md-block bg-dark text-white">
+          <h5>First</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eius exercitationem facere facilis iure sunt ullam voluptatem? Consequuntur, iure, nulla.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/carousel2.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block bg-dark text-white">
+          <h5>Second</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus beatae harum quaerat quod repellat temporibus.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/carousel3.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block bg-dark text-white">
+          <h5>Third</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dignissimos dolor rem?</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<!--CONTACT-->
+
+<section id="contact" class="container-fluid py-4">
+  <div class="container">
+    <div class="row">
+      <!--MAP-->
+      <div class="col-md-4 mb-4">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d643.39551892649!2d18.16272962779696!3d49.83151960000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713e4e2d424e2c5%3A0xfe99a98da4b6280a!2sVSB%20-%20Technical%20University%20of%20Ostrava!5e0!3m2!1sen!2scz!4v1707135464392!5m2!1sen!2scz"
+                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <!-- Contact us -->
+      <div class="col-md-4 mb-4 font-1">
+        <h2 class="text-center">Contact us</h2>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-12 mb-2 text-center">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
+          </div>
+          <div class="col-12 mb-2 text-center">
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
+          </div>
+          <div class="col-12 text-center">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!--Contact Information-->
+      <div class="col-md-4 mb-4">
+        <p><i class="fas fa-map-marker-alt"></i> 123 Main address</p>
+        <p><i class="fas fa-phone"></i> +123 456 789</p>
+        <p><i class="fas fa-envelope"></i> mail: info@email.com</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--SCRIPTS-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Initialize Bootstrap Popovers
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl);
+    });
+  });
+</script>
+</body>
+</html>

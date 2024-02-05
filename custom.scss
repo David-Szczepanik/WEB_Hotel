@@ -1,0 +1,74 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+$primary: grey;
+
+#home {
+  background: url('/images/home.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#home .form {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+h1 {
+  padding-bottom: 15px;
+}
+
+.form.container-fluid {
+  padding-bottom: 15px;
+}
+//form {
+//  background-color: rgba(0, 0, 0, 0.7);
+//  color: white;
+//  width: 50%; // Adjust this value as needed
+//  height: 50%; // Adjust this value as needed
+//  margin: auto; // Center the form
+//}
+
+.btn-primary {
+  background-color: $primary;
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive;
+}
+
+.font-1 {
+  font-family: 'Sofia', sans-serif;
+}
+h2 {
+  text-align: center;
+  font-style: italic;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.fontMonospace {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.card .btn-primary {
+  display: block;
+  margin: 0 auto;
+}
+
+
+.card .card-title {
+  text-align: center;
+  font-weight: bold;
+  color: red;
+  font-family: 'Sofia', sans-serif;
+  font-style: italic;
+}

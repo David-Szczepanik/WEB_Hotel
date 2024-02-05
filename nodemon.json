@@ -1,0 +1,5 @@
+{
+  "watch": ["custom.scss"],
+  "ext": "scss",
+  "exec": "node-sass custom.scss custom.css"
+}
